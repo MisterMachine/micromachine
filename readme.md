@@ -1,6 +1,6 @@
-# Foundation for Apps Template
+# Micromachine
 
-This is the default template project for Foundation for Apps. It's powered by Node, Gulp, Angular, and libsass. It provides you with a basic template to get started with Angular and Foundation for Apps. If you're already an Angular developer, you may instead want to install the components into your own stack using Bower: `bower install foundation-apps`
+A web app playground. Built using Foundation for Web Apps.
 
 ## Requirements
 
@@ -15,10 +15,10 @@ You'll need the following software installed to get started.
 
 ## Get Started
 
-Clone this repository, where `app` is the name of your app.
+Clone this repository
 
 ```bash
-git clone https://github.com/zurb/foundation-apps-template.git app
+git clone git@github.com:menslow/micromachine.git
 ```
 
 Change into the directory.

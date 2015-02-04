@@ -94,6 +94,7 @@ gulp.task('sass', function() {
 
 // Compiles and copies the Foundation for Apps JavaScript, as well as your app's custom JS
 gulp.task('uglify', function() {
+
   // Foundation JavaScript
   gulp.src(foundationJS)
     .pipe(uglify({

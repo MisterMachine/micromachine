@@ -11,7 +11,7 @@ url: /signup
       <div class="large-12 columns">
         <label>Your name</label>
         <input type="text" placeholder="Name" name="name" ng-model="signup.name" ng-minlength=3 ng-maxlength=50 required />
-        <div class="error" ng-show="signup_form.name.$dirty && signup_form.name.$invalid">
+        <div class="error" ng-show="signup_form.name.$dirty && signup_form.name.$invalid && signup_form.submitted">
           <small class="error" ng-show="signup_form.name.$error.required">
             Your name is required.
           </small>
@@ -67,7 +67,7 @@ url: /signup
       </div>
     </div>
 
-    <button type="submit" ng-disabled="signup_form.$invalid" class="button radius">Submit</button>
+    <button type="submit" class="button radius">Submit</button>
 
   </fieldset>
 </form>

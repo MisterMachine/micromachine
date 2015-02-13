@@ -1,14 +1,18 @@
 (function() {
   'use strict';
 
-  angular.module('application', [
+  angular.module('micromachine', [
     'ui.router',
+    'ngResource',
     'ngAnimate',
 
     //foundation
     'foundation',
     'foundation.dynamicRouting',
-    'foundation.dynamicRouting.animations'
+    'foundation.dynamicRouting.animations',
+
+    //ng-tasty
+    'ngTasty'
   ])
     .config(config)
     .run(run)

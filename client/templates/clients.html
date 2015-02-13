@@ -1,0 +1,17 @@
+---
+name: clients
+url: /clients
+---
+
+<h1>Clients</h1>
+
+<div ng-controller="ClientController">
+
+  <div class="card" ng-repeat="client in clients">
+    <div class="card-section">
+      <h3><strong>{{client.name}}</strong></h3>
+      <p>{{client.address}}</p>
+    </div>
+  </div>
+
+</div>

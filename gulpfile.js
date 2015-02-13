@@ -41,7 +41,10 @@ var foundationJS = [
 ];
 // These files are for your app's JavaScript
 var appJS = [
-  'client/assets/js/app.js'
+  'bower_components/angular-resource/angular-resource.min.js',
+  'bower_components/ng-tasty/ng-tasty-tpls.min.js',
+  'client/assets/js/app.js',
+  'client/assets/js/controllers/client.controller.js'
 ];
 
 // 3. TASKS

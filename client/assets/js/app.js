@@ -3,7 +3,6 @@
 
   angular.module('micromachine', [
     'ui.router',
-    'ngResource',
     'ngAnimate',
 
     //foundation

@@ -9,7 +9,10 @@
     //foundation
     'foundation',
     'foundation.dynamicRouting',
-    'foundation.dynamicRouting.animations'
+    'foundation.dynamicRouting.animations',
+
+    //ng-tasty
+    'ngTasty'
   ])
     .config(config)
     .run(run)

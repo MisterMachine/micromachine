@@ -1,6 +1,10 @@
-.DS_Store
-node_modules
+/app
+*.DS_Store
+*.coffee
+/css/*
+bower_components/*
+node_modules/
 npm-debug.log
-bower_components
-build
-.sass-cache
+.sass-cache/
+/build/*
+/tests/unit/scss/*.css

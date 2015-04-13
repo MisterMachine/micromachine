@@ -1,0 +1,53 @@
+---
+name: clients/add
+url: /clients/add
+---
+
+<h1>Add Client</h1>
+
+<form ng-controller="ClientController">
+  <label>
+    Name
+    <input type="text" name="name" ng-model="editedClient.name" placeholder="Victory Burger">
+  </label>
+
+  <label>
+    Address
+    <textarea name="address" ng-model="editedClient.address"  placeholder="1099 Alcatraz Ave, Oakland, CA 94608"></textarea>
+  </label>
+  
+  <div class="grid-block">
+    <div class="small-12 medium-6 grid-content">
+      <label>
+        Phone
+        <input type="tel" name="phone" ng-model="editedClient.phone"  placeholder="(510) 653-8322">
+      </label>
+    </div>
+    <div class="small-12 medium-6 grid-content">
+      <label>
+        Website
+        <input type="url" name="website" ng-model="editedClient.website" placeholder="victoryburger.com">
+      </label>
+    </div>
+    <div class="small-12 medium-6 grid-content">
+      <label>
+        Twitter
+        <input type="text" name="twitter" ng-model="editedClient.twitter" placeholder="victoryburger">
+      </label>
+    </div>
+    <div class="small-12 medium-6 grid-content">
+      <label>
+        Facebook
+        <input type="url" name="facebook" ng-model="editedClient.facebook" placeholder="facebook.com/victoryburger">
+      </label>
+    </div>
+  </div>
+
+  <label>
+    Background
+    <textarea name="background" ng-model="editedClient.background" placeholder=""></textarea>
+  </label>
+
+  <a ui-sref="clients">Cancel</a> <button ng-click="createClient(editedClient)">Save</a>
+
+</form>

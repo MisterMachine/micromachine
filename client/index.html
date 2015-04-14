@@ -11,17 +11,28 @@
     <script src="/assets/js/app.js"></script>
   </head>
   <body>
-    <zf-offcanvas id="primary-menu" position="left">
+    <zf-offcanvas id="secondary-menu" position="left">
       <a zf-close="" class="close-button">×</a>
       <ul>
+        <li><a ui-sref="alerts">Alerts</a></li>
+        <li><a ui-sref="messages">Messages</a></li>
+        <li><a ui-sref="history">History</a></li>
         <li><a ui-sref="home">Home</a></li>
-        <li><a ui-sref="notifications">Notifications</a></li>
       </ul>
     </zf-offcanvas>
+
     <div class="grid-frame vertical">
-      <div class="primary title-bar">
-      <div class="center title">Micromachine</div>
-        <span class="left"><a zf-open="primary-menu">Menu</a></span>
+
+      <div class="grid-block">
+        <div class="grid-content">
+          <ul class="primary menu-bar">
+            <li><a zf-toggle="secondary-menu"><img zf-iconic="" icon="chevron" size="small" class="iconic-color-primary">Menu</a></li>
+            <li><a href="#"><img zf-iconic="" icon="person" size="small" class="iconic-color-primary">Graph</a></li>
+            <li><a href="#"><img zf-iconic="" icon="cog" size="small" class="iconic-color-primary">Sort</a></li>
+            <li><a href="#"><img zf-iconic="" icon="bell" size="small" class="iconic-color-primary">Filter</a></li>
+            <li><a href="#"><img zf-iconic="" icon="magnifying-glass" size="small" class="iconic-color-primary">Search</a></li>
+          </ul>
+        </div>
       </div>
 
       <div ng-class="['ui-animation' ]" ui-view class="grid-block">

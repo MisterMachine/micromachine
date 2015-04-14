@@ -11,19 +11,22 @@
     <script src="/assets/js/app.js"></script>
   </head>
   <body>
+    <zf-offcanvas id="primary-menu" position="left">
+      <a zf-close="" class="close-button">×</a>
+      <ul>
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="notifications">Notifications</a></li>
+      </ul>
+    </zf-offcanvas>
     <div class="grid-frame vertical">
-      <div class="grid-content shrink" style="padding: 0;">
-        <ul class="primary condense menu-bar">
-          <li><a><strong>Micromachine</strong></a></li>
-          <li><a ui-sref="home">Home</a></li>
-          <li><a ui-sref="contact">Contact</a></li>
-        </ul>
+      <div class="primary title-bar">
+      <div class="center title">Micromachine</div>
+        <span class="left"><a zf-open="primary-menu">Menu</a></span>
       </div>
-      <div class="grid-content">
-        <div class="grid-container">
-          <div ng-class="['ui-animation']" ui-view></div>
-        </div>
+
+      <div ng-class="['ui-animation' ]" ui-view class="grid-block">
       </div>
+
     </div>
   </body>
 </html>
